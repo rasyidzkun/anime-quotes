@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: colorChanges 5s linear 0s infinite alternate;
+}
+
+.container {
+    width: 605px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content {
+    margin: 30px 0;
+}
+
+.quote-area {
+    font-size: 15px;
+}
+
+.quote-area p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.author {
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+
+.author span:first-child {
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+.buttons {
+    border-top: 1px solid #ccc;
+}
+
+.features {
+    display: flex;
+    margin: 15px 0 -8px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #0096c7;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#btn:hover {
+    background-color: #0077b6;
+}
+
+#btn.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 400px;
+        margin: 0 10px;
+    }
+
+    header {
+        font-size: 30px;
+        margin-bottom: -10px;
+    }
+
+    .quote-area p {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 16px;
+    }
+}
+
+@keyframes colorChanges {
+    0% {background-color: #d9ed92;}
+    10% {background-color: #b5e48c;}
+    20% {background-color: #99d98c;}
+    30%{background-color: #76c893;}
+    40%{background-color:#52b69a ;}
+    50%{background-color: #34a0a4;}
+    60%{background-color: #168aad;}
+    70%{background-color: #1a759f;}
+    80%{background-color: #1e6091;}
+    90%{background-color: #184e77;}
+    100%{background-color: #144163;}
+}
